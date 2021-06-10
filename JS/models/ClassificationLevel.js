@@ -3,8 +3,8 @@ const confidential = require("yargs").argv.confidential;
 
 const classificationLevel  = {
     UNCLASSIFIED: 'Unclassified',
-    CONFIDENTIAL: confidential,
-    SECRET: secret,
+    CONFIDENTIAL: 'Confidential',
+    SECRET: 'Secret',
     TOP_SECRET: 'Top_secret'
 };
 

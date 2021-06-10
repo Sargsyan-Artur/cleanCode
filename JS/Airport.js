@@ -34,20 +34,20 @@ class Airport {
 
     getPassengerPlaneWithMaxPassengersCapacity() {
         let passengerPlanes = this.getPassengerPlane();
-        let planeWithMaxCapacity = passengerPlanes[0].getPassengersCapacity();
+        let maxCapacity = passengerPlanes[0].getPassengersCapacity();
         for (let i = 0; i < passengerPlanes.length; i++) {
-            if (passengerPlanes[i].getPassengersCapacity() > planeWithMaxCapacity.getPassengersCapacity()) {
-                planeWithMaxCapacity = passengerPlanes[i];
+            if (passengerPlanes[i].getPassengersCapacity() > maxCapacity) {
+                maxCapacity = passengerPlanes[i].getPassengersCapacity();
             }
         }
-        return planeWithMaxCapacity;
+        return maxCapacity;
     }
 
     getTransportMilitaryPlanes() {
         let transportMilitaryPlanes = [];
         let militaryPlanes = this.getMilitaryPlanes();
         for (let i = 0; i < militaryPlanes.length; i++) {
-            if (militaryPlanes[i].getMilitaryType() === militaryType.TYPE_TRANSPORT) {
+            if (militaryPlanes[i].getMilitaryType() === militaryType.TRANSPORT) {
                 transportMilitaryPlanes.push(militaryPlanes[i]);
             }
         }
