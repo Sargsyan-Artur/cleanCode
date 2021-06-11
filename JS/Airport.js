@@ -58,7 +58,7 @@ class Airport {
         let bomberMilitaryPlanes = [];
         let militaryPlanes = this.getMilitaryPlanes();
         for (let i = 0; i < militaryPlanes.length; i++) {
-            if (militaryPlanes[i].getMilitaryType() === militaryType.TYPE_BOMBER) {
+            if (militaryPlanes[i].getMilitaryType() === militaryType.BOMBER) {
                 bomberMilitaryPlanes.push(militaryPlanes[i]);
             }
         }
