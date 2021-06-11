@@ -4,11 +4,10 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "mocha",
-    "start": "node Index.js"
+    "test": "mocha"
   },
   "author": {
-    "name": "Sniazhana Matskevich"
+    "name": "Artur Sargsyan"
   },
   "license": "",
   "engines": {
